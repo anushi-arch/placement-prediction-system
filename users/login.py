@@ -1,0 +1,43 @@
+import streamlit as st
+
+def login():
+
+    st.title("🔐 Login")
+
+    user_type = st.selectbox(
+        "Login As",
+        ["Student", "Admin"]
+    )
+
+    username = st.text_input("Username")
+
+    password = st.text_input(
+        "Password",
+        type="password"
+    )
+
+    if st.button("Login"):
+
+        if user_type == "Admin":
+
+            if username == "admin" and password == "admin123":
+
+                st.session_state.logged_in = True
+                st.session_state.role = "Admin"
+
+                st.success("Admin Login Successful")
+
+            else:
+                st.error("Invalid Admin Credentials")
+
+        else:
+
+            if username == "student" and password == "student123":
+
+                st.session_state.logged_in = True
+                st.session_state.role = "Student"
+
+                st.success("Student Login Successful")
+
+            else:
+                st.error("Invalid Student Credentials")
