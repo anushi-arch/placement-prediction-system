@@ -1,6 +1,6 @@
-# 🎓 AI-Based Student Placement Prediction System
+# AI BASED STUDENT PLACEMENT PREDICTION SYSTEM
 
-## 📌 Project Overview
+##  PROJECT OVERVIEW
 
 The **AI-Based Student Placement Prediction System** is a Machine Learning web application developed using **Python** and **Streamlit**. It predicts whether a student is likely to be placed based on academic and skill-related factors such as CGPA, internship experience, projects, communication skills, technical skills, aptitude score, and certifications.
 
@@ -8,9 +8,9 @@ The system also provides career improvement suggestions, company eligibility rec
 
 ---
 
-# 🚀 Features
+#  FEATURES
 
-### 👨‍🎓 Student Features
+###  STUDENT FEATURES
 - Student Placement Prediction
 - Resume Upload & Analysis (PDF)
 - Resume Score Generation
@@ -21,13 +21,13 @@ The system also provides career improvement suggestions, company eligibility rec
 - Email Notification with PDF Report
 - Multiple Machine Learning Model Selection
 
-### 👨‍💼 Admin Features
+### 👨‍💼 ADMIN FEATURES
 - View Prediction History
 - Search Student Records
 - Delete Prediction Records
 - Download Prediction History (CSV)
 
-### 📊 Analytics Features
+### 📊 ANALYTICS FEATURES
 - Placement Statistics Dashboard
 - Pie Chart Visualization
 - Prediction History Analysis
@@ -37,7 +37,7 @@ The system also provides career improvement suggestions, company eligibility rec
   - Recall
   - F1-Score
 
-### 📂 Batch Prediction
+###  BATCH PREDICTION
 - Upload CSV Dataset
 - Upload Excel Dataset
 - Predict Placement for Multiple Students
@@ -45,7 +45,7 @@ The system also provides career improvement suggestions, company eligibility rec
 
 ---
 
-# 🧠 Machine Learning Models Used
+# MACHINE LEARNING MODELS USED
 
 - Random Forest Classifier
 - Decision Tree Classifier
@@ -55,12 +55,12 @@ The system also provides career improvement suggestions, company eligibility rec
 
 ---
 
-# 🛠 Technologies Used
+# TECHNOLOGIES USED
 
-### Programming Language
+### PROGRAMMING LANGUAGE
 - Python 3.x
 
-### Libraries
+### LIBRARIES
 - Streamlit
 - Pandas
 - NumPy
@@ -73,16 +73,16 @@ The system also provides career improvement suggestions, company eligibility rec
 - yagmail
 - mysql-connector-python
 
-### Database
+### DATABASE
 - MySQL
 
-### Development Environment
+### DEVELOPMENT ENVIRONMENT
 - Visual Studio Code
 - MySQL Workbench
 
 ---
 
-# 📂 Project Structure
+# PROJECT STRUCTURE
 
 ```text
 placement prediction system/
@@ -118,12 +118,12 @@ placement prediction system/
 
 ---
 
-# ⚙ Installation
+# INSTALLATION
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/placement-prediction-system.git
+git clone https://github.com/anushi-arch/placement-prediction-system.git
 ```
 
 ### Navigate to the project
@@ -159,8 +159,8 @@ Create:
 Add:
 
 ```toml
-EMAIL = "yourgmail@gmail.com"
-PASSWORD = "your_google_app_password"
+EMAIL = "2006anushika@gmail.com"
+PASSWORD = "lfns hcth sjgm vxrt"
 ```
 
 ### Run the application
@@ -171,7 +171,7 @@ streamlit run app.py
 
 ---
 
-# 📊 Model Performance
+# MODEL PERFORMANCE
 
 The application displays the following evaluation metrics:
 
@@ -184,7 +184,7 @@ These metrics help compare the performance of different machine learning models.
 
 ---
 
-# 📈 Dashboard
+# DASHBOARD
 
 The Analytics Dashboard provides:
 
@@ -197,7 +197,7 @@ The Analytics Dashboard provides:
 
 ---
 
-# 📧 Email Notification
+# EMAIL NOTIFICATION
 
 After a prediction is generated:
 
@@ -207,7 +207,7 @@ After a prediction is generated:
 
 ---
 
-# 📄 PDF Report
+# PDF REPORT
 
 Each report contains:
 
@@ -219,7 +219,7 @@ Each report contains:
 
 ---
 
-# 📂 Batch Prediction
+# BATCH PREDICTION
 
 The application supports bulk predictions by uploading:
 
@@ -235,7 +235,7 @@ Users can download the results as a CSV file.
 
 ---
 
-# 📸 Screenshots
+# SCREENSHOTS
 
 Add screenshots of the following pages:
 
@@ -250,7 +250,7 @@ Add screenshots of the following pages:
 
 ---
 
-# 📌 Limitations
+# LIMITATIONS
 
 - Predictions depend on the quality of the training dataset.
 - Resume analysis is keyword-based and not full NLP.
@@ -260,7 +260,7 @@ Add screenshots of the following pages:
 
 ---
 
-# 🚀 Future Enhancements
+# FUTURE ENHANCEMENT
 
 - Deep Learning-based prediction models
 - AI-powered Resume Analysis using NLP
@@ -273,7 +273,7 @@ Add screenshots of the following pages:
 
 ---
 
-# 👨‍💻 Developed By
+# DEVELOPED BY
 
 ANUSHIKA
 BCA-III
@@ -285,6 +285,6 @@ Python & AI Internship Project
 
 ---
 
-# 📜 License
+# LICENSE
 
 This project is developed for educational and learning purposes.
