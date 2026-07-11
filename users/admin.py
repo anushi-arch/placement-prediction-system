@@ -4,7 +4,7 @@ from database import get_connection
 import matplotlib.pyplot as plt
 def admin_dashboard():
 
-    st.title("👨‍💼 Admin Dashboard")
+    st.title("ADMIN DASHBOARD")
 
     conn = get_connection()
 
@@ -49,7 +49,7 @@ def admin_dashboard():
     st.pyplot(fig)
     st.divider()
 
-    # Search  
+    # Search
     search = st.text_input("🔍 Search Student")
 
     if search:
@@ -66,14 +66,14 @@ def admin_dashboard():
         use_container_width=True
     )
     st.download_button(
-        label="📥 Download Prediction History (CSV)",
+        label="Download Prediction History (CSV)",
         data=df.to_csv(index=False),
         file_name="prediction_history.csv",
         mime="text/csv"
     )
     st.divider()
 
-    st.subheader("🗑 Delete Prediction Record")
+    st.subheader("Delete Prediction Record")
 
     record_id = st.number_input(
         "Enter Record ID",
@@ -96,6 +96,6 @@ def admin_dashboard():
         cursor.close()
         conn.close()
 
-        st.success("✅ Record Deleted Successfully!")
+        st.success("Record Deleted Successfully!")
 
         st.rerun()

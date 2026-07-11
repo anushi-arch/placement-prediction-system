@@ -2,7 +2,7 @@ import streamlit as st
 
 def login():
 
-    st.title("🔐 Login")
+    st.title("LOGIN")
 
     user_type = st.selectbox(
         "Login As",

@@ -13,8 +13,7 @@ from email_sender import send_email
 from email_sender import send_email
 # PAGE SETTINGS
 st.set_page_config(
-    page_title="AI Placement Prediction System",
-    page_icon="🎓",
+    page_title="AI BASED STUDENT PLACEMENT PREDICTION SYSTEM",
     layout="wide"
 )
 if "logged_in" not in st.session_state:
@@ -50,15 +49,15 @@ if not st.session_state.logged_in:
     login()
     st.stop()
 # SIDEBAR
-st.sidebar.title("📂 Navigation")
+st.sidebar.title("NAVIGATION")
 page = st.sidebar.radio(
     "Select Page",
     [
         "🏠 Home",
-        "📊 Data Analysis",
+        "📈 Data Analysis",
         "⭐ Prediction",
         "📈 Model Comparison",
-        "📊 Model Performance",
+        "🦢 Model Performance",
         "👨‍💼 Admin Dashboard",
         "📈 Analytics Dashboard",
         "📂 Batch Prediction",
@@ -67,7 +66,7 @@ page = st.sidebar.radio(
 )
 st.sidebar.divider()
 
-if st.sidebar.button("🚪 Logout"):
+if st.sidebar.button("LOGOUT"):
 
     st.session_state.logged_in = False
     st.session_state.role = ""
@@ -79,7 +78,7 @@ if page == "🏠 Home":
     st.markdown("""
 <h1 style='text-align:center;
 color:#1E3A8A;'>
-🎓 AI-Based Student Placement Prediction System
+AI BASED STUDENT PLACEMENT PREDICTION SYSTEM
 </h1>
 """, unsafe_allow_html=True)
 
@@ -92,17 +91,17 @@ color:#1E3A8A;'>
 
     st.markdown("""
 <p style="color:#334155; font-size:20px;">
-Welcome to the **AI-Based Student Placement Prediction System**.
+Welcome to the AI-Based Student Placement Prediction System.
 
 This project predicts whether a student is likely to be placed based on:
 
-- 📚 CGPA
-- 💼 Internship
-- 📁 Projects
-- 🗣 Communication Skills
-- 💻 Technical Skills
-- 🧠 Aptitude Score
-- 📜 Certifications
+-  CGPA
+-  Internship
+-  Projects
+-  Communication Skills
+-  Technical Skills
+-  Aptitude Score
+-  Certifications
 """
 , unsafe_allow_html=True)
 
@@ -124,15 +123,15 @@ This project predicts whether a student is likely to be placed based on:
             len(df[df["Placement"] == "No"])
         )
 
-    st.info("👈 Use the sidebar to navigate through the project.")
+    st.info(" Use the sidebar to navigate through the project.")
 # DATA ANALYSIS
-elif page == "📊 Data Analysis":
+elif page == "📈 Data Analysis":
 
-    st.title("📊 Data Analysis Dashboard")
+    st.title("DATA ANALYSIS DASHBOARD")
 
     st.markdown("""
 <h3 style="color:#1D4ED8;">
-📊 Dataset Preview
+Dataset Preview
 </h3>
 """, unsafe_allow_html=True)
 
@@ -202,17 +201,17 @@ elif page == "📊 Data Analysis":
 
 elif page == "⭐ Prediction":
 
-    st.title("⭐ Placement Prediction")
+    st.title("PLACEMENT PREDICTION")
 
     # -----------------------------
     # Student Details
     # -----------------------------
 
     student_name = st.text_input(
-        "👤 Student Name"
+        "STUDENT NAME"
     )
     email = st.text_input(
-    "📧 Enter Email Address"
+    "ENTER EMAIL ADDRESS"
 )
 
 
@@ -314,7 +313,7 @@ elif page == "⭐ Prediction":
     # Resume Upload
     # -----------------------------
 
-    st.subheader("📄 Resume Analysis")
+    st.subheader(" Resume Analysis")
     uploaded_resume = st.file_uploader(
     "Upload Resume (PDF)",
     type=["pdf"],
@@ -322,7 +321,7 @@ elif page == "⭐ Prediction":
 )
 
     st.divider()
-    if st.button("🚀 Predict Placement"):
+    if st.button(" Predict Placement"):
                 # ---------------------------------
         # Resume Analysis
         # ---------------------------------
@@ -331,7 +330,7 @@ elif page == "⭐ Prediction":
 
             score, skills = analyze_resume(uploaded_resume)
 
-            st.success(f"📊 Resume Score: {score}/100")
+            st.success(f" Resume Score: {score}/100")
 
             st.write("### Skills Found")
 
@@ -339,7 +338,7 @@ elif page == "⭐ Prediction":
 
             if score < 50:
                 st.warning(
-                    "💡 Improve your resume by adding more technical skills, projects and certifications."
+                    " Improve your resume by adding more technical skills, projects and certifications."
                 )
 
         else:
@@ -379,11 +378,11 @@ elif page == "⭐ Prediction":
 
             st.balloons()
 
-            st.success("🎉 Student is Likely to be PLACED")
+            st.success(" Student is Likely to be PLACED")
 
         else:
 
-            st.error("❌ Student is NOT Likely to be Placed")
+            st.error(" Student is NOT Likely to be Placed")
 
         st.metric(
             "Prediction Confidence",
@@ -400,30 +399,30 @@ elif page == "⭐ Prediction":
 
             st.divider()
 
-            st.subheader("📈 Career Improvement Suggestions")
+            st.subheader(" Career Improvement Suggestions")
 
             suggestions = []
 
             if cgpa < 7:
-                suggestions.append("📚 Improve your CGPA to above 7.5.")
+                suggestions.append(" Improve your CGPA to above 7.5.")
 
             if internship == 0:
-                suggestions.append("💼 Complete at least one internship.")
+                suggestions.append(" Complete at least one internship.")
 
             if projects < 3:
-                suggestions.append("📁 Build more real-world projects.")
+                suggestions.append(" Build more real-world projects.")
 
             if communication < 7:
-                suggestions.append("🗣 Improve your communication skills.")
+                suggestions.append(" Improve your communication skills.")
 
             if technical < 7:
-                suggestions.append("💻 Improve your programming skills.")
+                suggestions.append(" Improve your programming skills.")
 
             if certifications < 2:
-                suggestions.append("📜 Complete online certifications.")
+                suggestions.append(" Complete online certifications.")
 
             if aptitude < 70:
-                suggestions.append("🧠 Practice aptitude and logical reasoning.")
+                suggestions.append(" Practice aptitude and logical reasoning.")
 
             if len(suggestions) == 0:
                 st.success("Excellent profile! Keep improving.")
@@ -437,7 +436,7 @@ elif page == "⭐ Prediction":
 
         st.divider()
 
-        st.subheader("🏢 Company Eligibility Recommendations")
+        st.subheader(" Company Eligibility Recommendations")
 
         companies = []
 
@@ -511,7 +510,7 @@ elif page == "⭐ Prediction":
             )
 
         st.info(
-            "📌 Company recommendations are indicative only. Actual hiring criteria vary by company and recruitment cycle."
+            " Company recommendations are indicative only. Actual hiring criteria vary by company and recruitment cycle."
         )
 
         # ---------------------------------
@@ -525,7 +524,7 @@ elif page == "⭐ Prediction":
             selected_model
         )
 
-        st.success("✅ Prediction saved to MySQL database.")
+        st.success(" Prediction saved to MySQL database.")
 
         # Generate PDF Report
         pdf_file = create_pdf(
@@ -538,7 +537,7 @@ elif page == "⭐ Prediction":
         with open(pdf_file, "rb") as file:
 
             st.download_button(
-                label="📄 Download PDF Report",
+                label=" Download PDF Report",
                 data=file,
                 file_name=pdf_file,
                 mime="application/pdf"
@@ -555,7 +554,7 @@ elif page == "⭐ Prediction":
                     pdf_file
                 )
 
-                st.success("📧 Prediction Report Sent Successfully!")
+                st.success(" Prediction Report Sent Successfully!")
 
             except Exception as e:
 
@@ -567,7 +566,7 @@ elif page == "⭐ Prediction":
 
 elif page == "📈 Model Comparison":
 
-    st.title("📈 Machine Learning Model Comparison")
+    st.title("MACHINE LEARNING MODEL COMPARISON")
 
     st.success("Performance of all trained Machine Learning models")
 
@@ -622,9 +621,9 @@ elif page == "👨‍💼 Admin Dashboard":
     else:
 
         admin_dashboard()
-elif page == "📊 Model Performance":
+elif page == "🦢 Model Performance":
 
-    st.title("📊 Machine Learning Model Performance")
+    st.title("MACHINE LEARNING MODEL PERFORMANCE")
 
     results = pd.read_csv("models/model_results.csv")
 
@@ -661,7 +660,7 @@ elif page == "📊 Model Performance":
 
 elif page == "📈 Analytics Dashboard":
 
-    st.title("📈 Placement Analytics Dashboard")
+    st.title("PLACEMENT ANALYTICS DASHBOARD")
     conn = get_connection()
 
     query = """
@@ -705,7 +704,7 @@ elif page == "📈 Analytics Dashboard":
         # Pie Chart
         # -------------------------
 
-        st.subheader("🥧 Placement Distribution")
+        st.subheader(" Placement Distribution")
 
         fig1, ax1 = plt.subplots(figsize=(5,5))
 
@@ -728,7 +727,7 @@ elif page == "📈 Analytics Dashboard":
         # Model Usage
         # -------------------------
 
-        st.subheader("🤖 Model Usage")
+        st.subheader(" Model Usage")
 
         fig2, ax2 = plt.subplots(figsize=(7,4))
 
@@ -749,7 +748,7 @@ elif page == "📈 Analytics Dashboard":
         # Prediction Confidence
         # -------------------------
 
-        st.subheader("📊 Prediction Confidence")
+        st.subheader(" Prediction Confidence")
 
         fig3, ax3 = plt.subplots(figsize=(7,4))
 
@@ -779,7 +778,7 @@ elif page == "📈 Analytics Dashboard":
 # =====================================================
 elif page == "📂 Batch Prediction":
 
-    st.title("📂 Batch Prediction using CSV / Excel")
+    st.title("BATCH PREDICTION USING CSV/EXCEL DATASET")
 
     uploaded_file = st.file_uploader(
         "Upload Dataset",
@@ -870,37 +869,37 @@ elif page == "📂 Batch Prediction":
 
 elif page == "✨ About":
 
-    st.title("✨ About Project")
+    st.title('ABOUT THE PROJECT')
 
-    st.success("BCA (NEP) | Python + AI Internship Project")
+    st.success("BCA | Python + AI Internship Project")
 
     st.markdown("""
-### 👨‍💻 Technologies Used
+###  Technologies Used
 
-- 🐼 Pandas
-- 🔢 NumPy
-- 📊 Matplotlib
-- 📈 Seaborn
-- 🤖 Scikit-learn
-- 🌐 Streamlit
+-  Pandas
+-  NumPy
+-  Matplotlib
+-  Seaborn
+-  Scikit-learn
+-  Streamlit
 
-### 🧠 Machine Learning Algorithm
+###  Machine Learning Algorithm
 
 **Random Forest Classifier**
 
-### 🎯 Project Objective
+###  Project Objective
 
 Predict whether a student is likely to be placed using academic performance and skill-based features.
 
-### 🏫 University
+###  University
 
 **Panjab University**
 
-### 📚 Course
+###  Course
 
 **Bachelor of Computer Applications (BCA - NEP)**
 
-### 💡 Internship
+###  Internship
 
 **Python + AI**
 """)
