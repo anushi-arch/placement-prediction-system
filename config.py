@@ -22,7 +22,6 @@ DB_NAME = "placement_ai"
 MODEL_FILES = {
     "Random Forest": "models/random_forest.pkl",
     "Decision Tree": "models/decision_tree.pkl",
-    "Logistic Regression": "models/logistic_regression.pkl",
     "KNN": "models/knn.pkl",
     "SVM": "models/svm.pkl"
 }
