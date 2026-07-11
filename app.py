@@ -21,26 +21,6 @@ if "logged_in" not in st.session_state:
 
 if "role" not in st.session_state:
     st.session_state.role = ""
-# CUSTOM CSS
-st.markdown("""
-<style>
-/* Make all text white */
-h1, h2, h3, h4, h5, h6,
-p,
-label,
-span,
-div,
-li {
-    color: white !important;
-}
-
-/* Metric labels and values */
-[data-testid="metric-container"] label,
-[data-testid="metric-container"] div {
-    color: white !important;
-}
-</style>
-""", unsafe_allow_html=True)
 # LOAD MODEL & DATA
 model = joblib.load("models/placement_model.pkl")
 df = pd.read_csv("data/placement.csv")
