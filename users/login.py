@@ -31,8 +31,10 @@ def login():
                 st.error("Invalid Admin Credentials")
 
         else:
-
-            if username == "student" and password == "student123":
+            if (
+                username == st.secrets["STUDENT_USERNAME"]
+                and password == st.secrets["STUDENT_PASSWORD"]
+                ):
 
                 st.session_state.logged_in = True
                 st.session_state.role = "Student"
