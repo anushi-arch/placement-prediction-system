@@ -200,7 +200,6 @@ elif page == "⭐ Prediction":
         [
             "Random Forest",
             "Decision Tree",
-            "Logistic Regression",
             "KNN",
             "SVM"
         ]
@@ -209,7 +208,6 @@ elif page == "⭐ Prediction":
     model_files = {
         "Random Forest": "models/random_forest.pkl",
         "Decision Tree": "models/decision_tree.pkl",
-        "Logistic Regression": "models/logistic_regression.pkl",
         "KNN": "models/knn.pkl",
         "SVM": "models/svm.pkl"
     }
@@ -579,7 +577,6 @@ elif page == "📈 Model Comparison":
     [
         "Random Forest",
         "Decision Tree",
-        "Logistic Regression",
         "KNN",
         "SVM"
     ]
@@ -587,7 +584,6 @@ elif page == "📈 Model Comparison":
     model_files = {
         "Random Forest": "models/random_forest.pkl",
         "Decision Tree": "models/decision_tree.pkl",
-        "Logistic Regression": "models/logistic_regression.pkl",
         "KNN": "models/knn.pkl",
         "SVM": "models/svm.pkl"
         }

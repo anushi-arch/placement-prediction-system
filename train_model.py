@@ -29,7 +29,6 @@ X_train, X_test, y_train, y_test = train_test_split(
 models = {
     "Random Forest": RandomForestClassifier(random_state=42),
     "Decision Tree": DecisionTreeClassifier(random_state=42),
-    "Logistic Regression": LogisticRegression(max_iter=1000),
     "KNN": KNeighborsClassifier(),
     "SVM": SVC(probability=True)
 }

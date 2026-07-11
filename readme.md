@@ -104,7 +104,6 @@ placement prediction system/
 ├── models/
 │   ├── random_forest.pkl
 │   ├── decision_tree.pkl
-│   ├── logistic_regression.pkl
 │   ├── knn.pkl
 │   └── svm.pkl
 │
