@@ -1,11 +1,12 @@
+# Streamlit secrets
 .streamlit/secrets.toml
+
 # Python cache
 __pycache__/
 *.pyc
 
-# Generated reports
+# Generated PDF reports
 *_Prediction_Report.pdf
 
-# Streamlit secrets
-
+# Windows system file
 desktop.ini
