@@ -6,7 +6,6 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 
