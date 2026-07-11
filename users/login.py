@@ -2,44 +2,58 @@ import streamlit as st
 
 def login():
 
-    st.title("LOGIN")
+    st.title("PLACEMENT PREDICTION SYSTEM")
 
-    user_type = st.selectbox(
-        "Login As",
-        ["Student", "Admin"]
-    )
+    st.subheader("Choose Access")
 
-    username = st.text_input("Username")
+    col1, col2 = st.columns(2)
 
-    password = st.text_input(
-        "Password",
-        type="password"
-    )
+    # -------------------------
+    # Student Access
+    # -------------------------
+    with col1:
 
-    if st.button("Login"):
+        st.info("Student")
 
-        if user_type == "Admin":
+        st.write("Continue without login.")
 
-            if username == "admin" and password == "admin123":
+        if st.button("Continue as Student"):
+
+            st.session_state.logged_in = True
+            st.session_state.role = "Student"
+
+            st.rerun()
+
+    # -------------------------
+    # Admin Login
+    # -------------------------
+    with col2:
+
+        st.info("Admin")
+
+        username = st.text_input(
+            "Admin Username"
+        )
+
+        password = st.text_input(
+            "Admin Password",
+            type="password"
+        )
+
+        if st.button("Admin Login"):
+
+            if (
+                username == st.secrets["ADMIN_USERNAME"]
+                and
+                password == st.secrets["ADMIN_PASSWORD"]
+            ):
 
                 st.session_state.logged_in = True
                 st.session_state.role = "Admin"
 
                 st.success("Admin Login Successful")
+                st.rerun()
 
             else:
+
                 st.error("Invalid Admin Credentials")
-
-        else:
-            if (
-                username == st.secrets["STUDENT_USERNAME"]
-                and password == st.secrets["STUDENT_PASSWORD"]
-                ):
-
-                st.session_state.logged_in = True
-                st.session_state.role = "Student"
-
-                st.success("Student Login Successful")
-
-            else:
-                st.error("Invalid Student Credentials")
