@@ -21,13 +21,13 @@ The system also provides career improvement suggestions, company eligibility rec
 - Email Notification with PDF Report
 - Multiple Machine Learning Model Selection
 
-### 👨‍💼 ADMIN FEATURES
+###  ADMIN FEATURES
 - View Prediction History
 - Search Student Records
 - Delete Prediction Records
 - Download Prediction History (CSV)
 
-### 📊 ANALYTICS FEATURES
+###  ANALYTICS FEATURES
 - Placement Statistics Dashboard
 - Pie Chart Visualization
 - Prediction History Analysis
@@ -237,16 +237,65 @@ Users can download the results as a CSV file.
 
 # SCREENSHOTS
 
+##  Home Page
+
+![Home Page](screenshots/home_page.png)
+
+---
+
+## Placement Prediction
+
+![Prediction](screenshots/prediction_page.png)
+
+---
+
+## Prediction Result
+
+![Prediction Result](screenshots/prediction_result.png)
+
+---
+
+## Resume Analysis
+
+![Resume Analysis](screenshots/resume_analysis.png)
+
+---
+
+## Analytics Dashboard
+
+![Analytics Dashboard](screenshots/analytics_dashboard.png)
+
+---
+
+## Data Analysis
+
+![Data Analysis](screenshots/data_analysis.png)
+
+---
+
+## Model Performance
+
+![Model Performance](screenshots/model_performance.png)
+
+---
+
+## Batch Prediction
+
+![Batch Prediction](screenshots/batch_prediction.png)
+
+---
+
+## Admin Dashboard
+
+![Admin Dashboard](screenshots/admin_dashboard.png)
+
+---
+
+## Email Notification
+
+![Email Notification](screenshots/email_notification.png)
 Add screenshots of the following pages:
 
-- Home Page
-- Prediction Page
-- Resume Analysis
-- Analytics Dashboard
-- Data Analysis
-- Model Performance
-- Batch Prediction
-- Admin Dashboard
 
 ---
 
