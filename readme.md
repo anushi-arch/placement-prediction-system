@@ -279,8 +279,8 @@ Create:
 Add:
 
 ```toml
-EMAIL = "2006anushika@gmail.com"
-PASSWORD = "lfns hcth sjgm vxrt"
+EMAIL = "youemail@gmail.com"
+PASSWORD = "........"
 ```
 
 ### Run the application
