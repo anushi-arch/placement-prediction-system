@@ -263,25 +263,34 @@ pip install -r requirements.txt
 Create a database:
 
 ```sql
-CREATE DATABASE placement_ai;
-```
+## Database Setup
+
+1. Create a MySQL database.
+2. Import the provided SQL file (if applicable).
+3. Configure your database credentials using Streamlit Secrets.
+
 
 Update the database credentials in `database.py`.
 
 ### Configure Email
 
 Create:
+## Configure Secrets
 
-```text
-.streamlit/secrets.toml
-```
-
-Add:
+Create a `.streamlit/secrets.toml` file and add the required configuration:
 
 ```toml
-EMAIL = "youemail@gmail.com"
-PASSWORD = "........"
-```
+EMAIL = "your_email@gmail.com"
+PASSWORD = "your_gmail_app_password"
+
+DB_HOST = "your_host"
+DB_PORT = "3306"
+DB_NAME = "your_database"
+DB_USER = "your_username"
+DB_PASSWORD = "your_password"
+
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD = "your_admin_password"
 
 ### Run the application
 
