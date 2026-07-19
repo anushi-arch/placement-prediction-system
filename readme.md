@@ -362,8 +362,6 @@ Administrator login is protected and provides access to:
 
 # DATABASE
 
-## 🗄️ Database
-
 The application stores prediction history in a Railway-hosted MySQL database.
 
 Stored Information:
@@ -476,8 +474,6 @@ Add screenshots of the following pages:
 ---
 # LIVE DEMO
 
-## 🚀 Live Demo
-
 Streamlit App:
 
 https://placement-predictions.streamlit.app/
@@ -494,7 +490,7 @@ https://placement-predictions.streamlit.app/
 
 # FUTURE ENHANCEMENT
 
-## 🌟 Future Enhancements
+## Future Enhancements
 
 - Student Registration System
 - Password Hashing
@@ -509,7 +505,6 @@ https://placement-predictions.streamlit.app/
 
 ANUSHIKA
 BCA-III
-7031/24
 PGGC-11
 Panjab University
 
@@ -521,8 +516,6 @@ Python & AI Internship Project
 
 This project is developed for educational and learning purposes.
 
-# FINAL DESCRIPTION
-
-## 📌 Project Overview
+# CONCLUSION
 
 The AI Placement Prediction System is a Machine Learning-based web application developed using Streamlit. It predicts a student's placement chances based on academic and skill-related inputs. The application includes resume analysis, company recommendations, career improvement suggestions, PDF report generation, email notifications, batch prediction, analytics dashboard, and secure admin access. Prediction history is stored in a Railway-hosted MySQL database, and the application is deployed on Streamlit Community Cloud.
