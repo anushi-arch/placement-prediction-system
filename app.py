@@ -847,7 +847,7 @@ elif page == "✨ About":
 
     st.title('ABOUT THE PROJECT')
 
-    st.success("BCA | Python + AI Internship Project")
+    st.success("Python + AI Internship Project")
 
     st.markdown("""
 ###  Technologies Used
@@ -858,10 +858,19 @@ elif page == "✨ About":
 -  Seaborn
 -  Scikit-learn
 -  Streamlit
+-  Seaborn
+-  MySQL
+-  Railway Cloud
+-  PyPDF2
+-  pdfplumber
+-  Yagmail
 
 ###  Machine Learning Algorithm
 
 **Random Forest Classifier**
+**Decision Tree**
+**KNN**
+**SVM**
 
 ###  Project Objective
 
@@ -869,11 +878,12 @@ Predict whether a student is likely to be placed using academic performance and 
 
 ###  University
 
+**POST GRADUATE GOVERNMENT COLLEGE, Sector 11, Chandigarh**
 **Panjab University**
 
 ###  Course
 
-**Bachelor of Computer Applications (BCA - NEP)**
+**BCA (FYUP)**
 
 ###  Internship
 
@@ -882,4 +892,4 @@ Predict whether a student is likely to be placed using academic performance and 
 
     st.divider()
 
-    st.caption("Developed as part of the Python + AI Internship Project")
+    st.caption("Developed as part of the Internship Project")
