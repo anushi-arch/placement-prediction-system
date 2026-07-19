@@ -7,7 +7,7 @@
 
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-success)
 
-![MySQL](https://img.shields.io/badge/MySQL-Railway-orange)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
 
 ![License](https://img.shields.io/badge/License-MIT-green)
 
